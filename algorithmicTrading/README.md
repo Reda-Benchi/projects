@@ -1,4 +1,4 @@
-1. Setup: TWS & IBKR API
+# 1. Setup: TWS & IBKR API
 1.1. Visit the U.S. IBKR site
 Always select the stable version when downloading.
 
@@ -14,7 +14,7 @@ Use Paper Trading for demo money or Live Trading for real money.
 
 ----------------------------------------------------------------------------------
 
-2. API Architecture (nice to know)
+# 2. API Architecture (nice to know)
 Typical setup: Server → Your Trading App
 IBKR setup: Server → TWS → Your Trading App
 
@@ -22,36 +22,36 @@ Note: TWS must be running for your code to place trades via the API.
 
 ----------------------------------------------------------------------------------
 
-3. Setup enviroment 
+# 3. Setup enviroment 
 Create and activate a virtual environment inside your project directory:
 
-# Create the virtual environment
+How to: Create the virtual environment
 python3 -m venv IBKRvenv
 
-# Activate the virtual environment
+How to: Activate the virtual environment
 source IBKRvenv/bin/activate
 
-# (To deactivate the environment when finished)
+How to: deactivate the environment when finished
 deactivate
 
-# Install specific Python version (if needed, otherwise skip if already using 3.12.5)
+How to: Install specific Python version (if needed, otherwise skip if already using 3.12.5)
 pip install python==3.12.5
 
-# Install required libraries
+How to: Install required libraries
 pip install pandas==2.3.0
 pip install matplotlib==3.10.3
 pip install setuptools==80.9.0
 
 ----------------------------------------------------------------------------------
 
-4. Install API Setup Script 
+# 4. Install API Setup Script 
 Navigate to the setup script directory
 cd /twsapi_macunix/IBJts/source/pythonclient
 
-# Verify that setup.py exists
+How to: Verify that setup.py exists
 ls setup.py
 
-# Install the package
+How to: Install the setup package for API
 python3 setup.py install
 
 If ibapi was not successfully installed, run the following commend. 
@@ -59,8 +59,8 @@ Code: pip install ibapi
 
 ----------------------------------------------------------------------------------
 
-5. Gateway API Configuration Settings
-# Only the following ports are enabled to listen for API calls. These ports must be enabled and locked down to ensure secure access:
+# 5. Gateway API Configuration Settings
+Only the following ports are enabled to listen for API calls. These ports must be enabled and locked down to ensure secure access:
 
 TWS live trading: 7496
 TWS paper trading: 7497
