@@ -1,4 +1,7 @@
+@author: Reda Benchi (https://github.com/Reda-Benchi/projects/tree/main/algorithmicTrading)
+
 # 1. Setup: TWS & IBKR API
+
 1.1. Visit the U.S. IBKR site
 Always select the stable version when downloading.
 
